@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Moneda</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lodash/lodash.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Conversor de Moneda</h1>
+        <div class="toggle-mode" id="toggle-mode">Cambiar a modo oscuro</div>
+        <div class="form-group">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre">
+            <span id="nombre-error" class="error-message"></span>
+        </div>
+        <div class="form-group">
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido">
+            <span id="apellido-error" class="error-message"></span>
+        </div>
+        <div class="form-group">
+            <label for="edad">Edad:</label>
+            <input type="text" id="edad">
+            <span id="edad-error" class="error-message"></span>
+        </div>
+        <div class="form-group">
+            <label for="monto">Monto:</label>
+            <input type="text" id="monto">
+        </div>
+        <div class="form-group">
+            <label for="opcion">Convertir:</label>
+            <select id="opcion">
+                <option value="1">Pesos a Euros/Dólares</option>
+                <option value="2">Euros/Dólares a Pesos</option>
+            </select>
+        </div>
+        <button id="convertir">Convertir</button>
+        <div id="resultados"></div>
+        <h2>Historial de Conversiones</h2>
+        <ul id="historial-lista"></ul>
+    </div>
+    <script src="js/app.js"></script>
+</body>
+</html>
